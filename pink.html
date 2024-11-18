@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girlish Vibes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: all 0.3s ease;
+            background-color: #f7c6d2; 
+        }
+
+        .girlish {
+            color: #f48fb1;
+            padding: 20px;
+            text-align: center;
+            background-image: url('https://www.transparenttextures.com/patterns/old-wall-2.png'); 
+            background-size: cover;
+            transition: all 0.3s ease;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: #ec407a;
+            font-family: 'Pacifico', cursive;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #f06292;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        p {
+            font-size: 20px;
+            color: #f06292;
+            line-height: 1.8;
+            font-style: italic;
+            margin: 15px 0;
+        }
+
+        .quote {
+            font-size: 24px;
+            font-family: 'Pacifico', cursive;
+            color: #ec407a;
+            margin-top: 30px;
+            font-style: italic;
+        }
+
+        .quote:before {
+            content: "💖 ";
+            font-size: 30px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        button {
+            background-color: #f48fb1; 
+            color: white;
+            font-size: 18px;
+            border: none;
+            margin: 10px;
+            padding: 12px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #f06292;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        .girlish::before {
+            content: "❤️";
+            font-size: 100px;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="girlish">
+        <h1>Welcome to the Girlish Vibe!</h1>
+        <p>Girls are all about good vibes, bright smiles, and endless dreams. From cute outfits and sparkly accessories to pink sunsets and cozy nights with besties, life is full of magic and sweet moments. It’s about feeling confident, dancing to your favorite songs, and spreading kindness wherever you go. Embrace the glitter, the laughter, and all the fun adventures that make every day special. Stay true to yourself, shine like the star you are, and never forget: life’s better with a touch of sparkle and a heart full of dreams! ✨💖</p>
+
+        <div class="quote">
+            "Sparkles, sunshine, pink dreams, and giggles. Cute outfits, glittery nails, girl talk, and heart emojis. Confident, bold, sweet, and unstoppable energy!" 💖
+        </div>
+
+        <div class="gallery">
+            <img src="louisvuitton.jpg" alt="Shoes">
+            <img src="rose.jpg" alt="Flowers">
+            <img src="blackpink.jpg" alt="POP">
+            <img src="makeup.jpg" alt="Makeup">
+        </div>
+
+        <div class="button-container">
+            <button onclick="changeStyle('girlish')">Girlish Vibe</button><br>
+            <a href="./index.html"><button>Home</button></a>
+        </div>
+    </div>
+
+    <script>
+        function changeStyle(style) {
+            if (style === 'girlish') {
+                document.body.classList.add('girlish');
+            }
+        }
+    </script>
+
+</body>
+</html>

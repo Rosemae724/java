@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boyish Vibe</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: all 0.3s ease;
+            background-color: #e0f7fa; 
+            color: #01579b; 
+        }
+
+        
+        .boyish {
+            padding: 20px;
+            text-align: center;
+            background-color: #e0f7fa; 
+            transition: all 0.3s ease;
+        }
+
+        
+        h1 {
+            font-size: 50px;
+            color: #01579b;
+            font-family: 'Roboto', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+
+        h2 {
+            font-size: 28px;
+            color: #0288d1;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        
+        p {
+            font-size: 20px;
+            color: #01579b;
+            line-height: 1.8;
+            margin: 15px 0;
+        }
+
+        
+        .quote {
+            font-size: 24px;
+            font-family: 'Roboto', sans-serif;
+            color: #0288d1;
+            margin-top: 30px;
+            font-style: italic;
+        }
+
+        .quote:before {
+            content: "💪 ";
+            font-size: 30px;
+        }
+
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        
+        .button-container {
+            margin-top: 30px;
+        }
+
+        button {
+            background-color: #0288d1; 
+            color: white;
+            font-size: 18px;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #01579b; 
+        }
+
+        button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="boyish">
+        <h1>Welcome to the Boyish Vibe!</h1>
+        <p>Boys are energetic, curious, and full of wonder. They often see the world as a playground, where every moment is an adventure waiting to unfold. Whether climbing trees, building forts, or getting lost in their imaginations, boys embrace challenges with enthusiasm and learn through exploration. They can be wild and playful but also gentle, thoughtful, and kind. Boys are full of dreams, growing and learning, on their way to becoming the men they will one day be.</p>
+        
+        
+        <div class="quote">
+            "Boys are adventurous, full of energy and curiosity, always seeking challenges. They dream big, learn fearlessly, and inspire with bold spirits." 💪
+        </div>
+
+        
+        <div class="gallery">
+            
+            <div class="item">
+                <img src="court.webp" alt="Basketball">
+                <p>Basketball</p>
+            </div>
+
+            
+            <div class="item">
+                <img src="gamingroom.webp" alt="Setup">
+                <p>Gaming Room setup</p>
+            </div>
+
+            
+            <div class="item">
+                <img src="gym.webp" alt="Adventure Gear">
+                <p>Gym</p>
+            </div>
+
+            
+            <div class="item">
+                <img src="ninjabike.avif" alt="Motorcycle">
+                <p>Motorcycle</p>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="./index.html"><button>Home</button></a>
+        </div>
+    </div>
+
+    <script>
+        function changeStyle(style) {
+                        if (style === 'boyish') {
+                document.body.classList.add('boyish');
+            }
+        }
+    </script>
+
+</body>
+</html>
